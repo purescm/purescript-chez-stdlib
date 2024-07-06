@@ -56,53 +56,61 @@ workspace:
         - unsafe-coerce
   package_set:
     address:
-      url: https://raw.githubusercontent.com/purescm/purescm/3c0074b172a12bb9ee353c9ad6031d64d10b8b01/package-sets/1.0.0.json
+      url: https://raw.githubusercontent.com/purescm/purescm/48dd11a2f69beb3b630f115601e4e64c3b7f3dd9/package-sets/1.0.0.json
     compiler: ">=0.15.10 <0.16.0"
     content:
       arrays:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: arrays
       assert:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: assert
       bifunctors: 6.0.0
       catenable-lists: 7.0.0
       console:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: console
       const: 6.0.0
       contravariant: 6.0.0
       control:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: control
+      datetime:
+        git: https://github.com/purescm/purescript-core.git
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
+        subdir: datetime
       distributive: 6.0.0
       effect:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: effect
       either: 6.1.0
       enums:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: enums
       exceptions:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: exceptions
       exists: 6.0.0
       filterable: 5.0.0
       foldable-traversable:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: foldable-traversable
+      foreign-object:
+        git: https://github.com/purescm/purescript-core.git
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
+        subdir: foreign-object
       free: 7.1.0
       functions:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: functions
         dependencies:
           - prelude
@@ -111,76 +119,92 @@ workspace:
       identity: 6.0.0
       integers:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: integers
       invariant: 6.0.0
+      json:
+        git: https://github.com/purescm/purescript-core.git
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
+        subdir: json
       lazy:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: lazy
-      lists: 7.0.0
+      lcg: 4.0.0
+      lists:
+        git: https://github.com/purescm/purescript-lists.git
+        ref: 71502a132567cf7f32c2242d57b1cba2c77ebc15
       maybe: 6.0.0
       minibench:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: minibench
       newtype: 5.0.0
       nonempty: 7.0.0
       numbers:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: numbers
       ordered-collections: 3.1.1
       orders: 6.0.0
       parallel: 7.0.0
       partial:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: partial
         dependencies: []
       prelude:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: prelude
       profunctor: 6.0.0
+      quickcheck:
+        git: https://github.com/purescm/purescript-core.git
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
+        subdir: quickcheck
+      random:
+        git: https://github.com/purescm/purescript-core.git
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
+        subdir: random
       record:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: record
       refs:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: refs
-        dependencies:
-          - effect
-          - prelude
       safe-coerce: 2.0.0
       semirings: 7.0.0
       st:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: st
+      strings:
+        git: https://github.com/purescm/purescript-core.git
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
+        subdir: strings
       tailrec: 6.1.0
       transformers: 6.0.0
       tuples: 7.0.0
       type-equality: 4.0.1
+      typelevel-prelude: 7.0.0
       unfoldable:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: unfoldable
       unsafe-coerce:
         git: https://github.com/purescm/purescript-core.git
-        ref: 154d77119aa25b70f07f4b880dcba41ed811a852
+        ref: 98f12cc76d4941f979f2530da94f5b46ce9551cd
         subdir: unsafe-coerce
         dependencies: []
       validation: 6.0.0
-  extra_packages:
-    datetime: 6.1.0
+  extra_packages: {}
 packages:
   arrays:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: arrays
     dependencies:
       - bifunctors
@@ -200,7 +224,7 @@ packages:
   assert:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: assert
     dependencies:
       - console
@@ -219,7 +243,7 @@ packages:
   console:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: console
     dependencies:
       - effect
@@ -245,15 +269,16 @@ packages:
   control:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: control
     dependencies:
       - newtype
       - prelude
   datetime:
-    type: registry
-    version: 6.1.0
-    integrity: sha256-g/5X5BBegQWLpI9IWD+sY6mcaYpzzlW5lz5NBzaMtyI=
+    type: git
+    url: https://github.com/purescm/purescript-core.git
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
+    subdir: datetime
     dependencies:
       - bifunctors
       - control
@@ -284,7 +309,7 @@ packages:
   effect:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: effect
     dependencies:
       - prelude
@@ -300,7 +325,7 @@ packages:
   enums:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: enums
     dependencies:
       - control
@@ -322,7 +347,7 @@ packages:
   foldable-traversable:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: foldable-traversable
     dependencies:
       - bifunctors
@@ -339,7 +364,7 @@ packages:
   functions:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: functions
     dependencies:
       - prelude
@@ -388,7 +413,7 @@ packages:
   integers:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: integers
     dependencies:
       - maybe
@@ -404,18 +429,17 @@ packages:
   lazy:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: lazy
     dependencies:
       - control
-      - effect
       - foldable-traversable
       - invariant
       - prelude
   lists:
-    type: registry
-    version: 7.0.0
-    integrity: sha256-EKF15qYqucuXP2lT/xPxhqy58f0FFT6KHdIB/yBOayI=
+    type: git
+    url: https://github.com/purescm/purescript-lists.git
+    rev: 71502a132567cf7f32c2242d57b1cba2c77ebc15
     dependencies:
       - bifunctors
       - control
@@ -459,11 +483,12 @@ packages:
   numbers:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: numbers
     dependencies:
       - functions
       - maybe
+      - prelude
   ordered-collections:
     type: registry
     version: 3.1.1
@@ -490,13 +515,13 @@ packages:
   partial:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: partial
     dependencies: []
   prelude:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: prelude
     dependencies: []
   profunctor:
@@ -515,7 +540,7 @@ packages:
   refs:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: refs
     dependencies:
       - effect
@@ -529,9 +554,10 @@ packages:
   st:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: st
     dependencies:
+      - effect
       - partial
       - prelude
       - tailrec
@@ -565,7 +591,7 @@ packages:
   unfoldable:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: unfoldable
     dependencies:
       - foldable-traversable
@@ -576,6 +602,6 @@ packages:
   unsafe-coerce:
     type: git
     url: https://github.com/purescm/purescript-core.git
-    rev: 154d77119aa25b70f07f4b880dcba41ed811a852
+    rev: 98f12cc76d4941f979f2530da94f5b46ce9551cd
     subdir: unsafe-coerce
     dependencies: []
