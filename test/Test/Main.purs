@@ -7,7 +7,6 @@ import Data.Array as Array
 import Data.Time.Duration (Milliseconds(..))
 import Data.Traversable (for, for_)
 import Effect (Effect)
-import Effect.Console (log)
 import Effect.Ref as Ref
 import Effect.Unsafe (unsafePerformEffect)
 import Test.Assert (assertEqual)
@@ -22,11 +21,10 @@ main = do
       Thread.sleep (Milliseconds 10.0)
       pure (x + 1)
 
-    threadFn threadId = do
+    threadFn _threadId = do
       for_ (Array.range 0 9) \_ -> do
         newCounter <- Ref.modify modifyFn counter
-        log $ "Thread " <> show (Thread.threadIdToInt threadId) <> ": new counter is " <> show
-          newCounter
+        -- log $ "Thread " <> show (Thread.threadIdToInt threadId) <> ": new counter is " <> show newCounter
         pure newCounter
 
   threads <- for (Array.range 0 9) \_ -> Thread.fork threadFn
