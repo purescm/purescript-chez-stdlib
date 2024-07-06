@@ -10,3 +10,5 @@ generated-docs/
 .purs*
 .psa*
 .spago
+.envrc
+.direnv
