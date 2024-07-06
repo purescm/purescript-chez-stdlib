@@ -1,0 +1,24 @@
+package:
+  name: chez-stdlib
+  dependencies:
+    - arrays
+    - console
+    - datetime
+    - effect
+    - foldable-traversable
+    - integers
+    - prelude
+    - refs
+    - unsafe-coerce
+  test:
+    main: Test.Chez.Main
+    dependencies:
+      - assert
+workspace:
+  backend:
+    cmd: purescm
+    args:
+      - build
+  packageSet:
+    url: https://raw.githubusercontent.com/purescm/purescm/e891f4292630cae4d0ff1143a1594f600fc58512/package-sets/1.0.0.json
+  extraPackages: {}
