@@ -36,4 +36,4 @@ jobs:
 
       - name: Run tests
         run: |
-          purescm run --main Test.Chez.Main
+          nix-shell --run "purescm run --main Test.Chez.Main"
