@@ -14,6 +14,7 @@ module Chez.Thread
   , makeCondition
   , conditionWait
   , conditionSignal
+  , conditionBroadcast
   , sleep
   ) where
 
@@ -75,6 +76,11 @@ foreign import conditionSignalImpl :: EffectFn1 Condition Unit
 
 conditionSignal :: Condition -> Effect Unit
 conditionSignal condition = Uncurried.runEffectFn1 conditionSignalImpl condition
+
+foreign import conditionBroadcastImpl :: EffectFn1 Condition Unit
+
+conditionBroadcast :: Condition -> Effect Unit
+conditionBroadcast condition = Uncurried.runEffectFn1 conditionBroadcastImpl condition
 
 --------------------------------------------------------------------------------
 -- Thread sleep
