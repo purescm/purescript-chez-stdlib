@@ -8,6 +8,7 @@
     makeCondition
     conditionWaitImpl
     conditionSignalImpl
+    conditionBroadcastImpl
     sleepImpl)
   (import (chezscheme))
 
@@ -30,6 +31,8 @@
   (define conditionWaitImpl (lambda (condition mutex) (condition-wait condition mutex)))
 
   (define conditionSignalImpl (lambda (condition) (condition-signal condition)))
+
+  (define conditionBroadcastImpl (lambda (condition) (condition-broadcast condition)))
 
   ;; TODO: make-time shoud probably be in a Chez.Time module
   (define sleepImpl (lambda (nanoseconds seconds) (sleep (make-time 'time-duration nanoseconds seconds))))
